@@ -9,7 +9,7 @@ import {
     UseFilters,
 } from '@nestjs/common';
 import { CreatePostDto, UpdatePostDto } from '../dto/post.dto';
-import { PostService } from '../post.service';
+import { PostService } from '../services/post.service';
 import { ExceptionLoggerFilter } from '../utils/exceptionLogger.filter';
 import { HttpExceptionFilter } from '../utils/httpException.filter';
 
