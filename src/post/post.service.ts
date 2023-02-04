@@ -1,8 +1,6 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { CreatePostDto, UpdatePostDto } from './dto/post.dto';
 import { PostRepository } from './repositories/post.rebository';
-;
-
 @Injectable()
 export class PostService {
     constructor(private readonly postRepository: PostRepository) { }
@@ -30,3 +28,4 @@ export class PostService {
     async deletePost(post_id: string) {
         return await this.postRepository.deleteOne(post_id);
     }
+}
